@@ -1,5 +1,5 @@
 # Computer Vision Laboratories
-Welcome to the Computer Vision 2022 laboratories GitHub repository. Here you will find all the information and the material needed for the laboratories lectures that will come.
+Welcome to the Computer Vision laboratories GitHub repository. Here you will find all the information and the material needed for the laboratories lectures that will come.
 The repository will be updated periodically with the material for the current lab. 
 
 ## Requirements
