@@ -13,8 +13,9 @@ In order to install a Python package, you need to use the `pip` package manager 
 - `opencv-contrib-python`
 - `numpy`
 - `open3d`
-
-If you feel confident you can install them on your own machine.
+- `matplotlib`
+- `scikit-image`
+- `ipykernel`
 
 ## Material
 
