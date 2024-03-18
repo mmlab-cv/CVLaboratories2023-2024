@@ -3,7 +3,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 
-img = cv2.imread('material\edge.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/edge.jpg', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 
 img = cv2.GaussianBlur(img,(3,3),0)

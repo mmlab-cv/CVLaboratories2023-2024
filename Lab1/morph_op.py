@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-img = cv2.imread('material\j.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/j.png', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 kernel = np.ones((5,5),np.uint8)
 erosion = cv2.erode(img,kernel,iterations = 1)

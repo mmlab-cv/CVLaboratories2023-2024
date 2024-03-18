@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 #GRAYSCALE
-img = cv2.imread('material\home.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/home.jpg', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 hist = cv2.calcHist([img],[0],None,[256],[0,256])
 
