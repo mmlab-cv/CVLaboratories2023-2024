@@ -14,7 +14,6 @@ plt.subplot(122),plt.imshow(erosion,cmap = 'gray'),plt.title('Erosion')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
-
 dilation = cv2.dilate(img,kernel,iterations = 1)
 
 plt.subplot(121),plt.imshow(img,cmap = 'gray'),plt.title('Original')
@@ -23,7 +22,7 @@ plt.subplot(122),plt.imshow(dilation,cmap = 'gray'),plt.title('Dilation')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
-img = cv2.imread('material\opening.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/opening.png', cv2.IMREAD_GRAYSCALE)
 opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 
 plt.subplot(121),plt.imshow(img,cmap = 'gray'),plt.title('Original')
@@ -32,7 +31,7 @@ plt.subplot(122),plt.imshow(opening,cmap = 'gray'),plt.title('Dilation')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
-img = cv2.imread('material\closing.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/closing.png', cv2.IMREAD_GRAYSCALE)
 closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 
 plt.subplot(121),plt.imshow(img,cmap = 'gray'),plt.title('Original')

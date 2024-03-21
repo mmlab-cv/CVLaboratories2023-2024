@@ -12,7 +12,7 @@ hist = cv2.calcHist([img],[0],None,[256],[0,256])
 plt.hist(img.ravel(),256,[0,256]); plt.show()
 
 #CALCULATE HISTOGRAM FROM A REGION
-img = cv2.imread('material\home.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../material/home.jpg', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 # create a mask
 mask = np.zeros(img.shape[:2], np.uint8)
