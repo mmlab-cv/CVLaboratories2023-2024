@@ -27,25 +27,25 @@ cap.release()
 cv2.destroyAllWindows()
 
 ## SAVE VIDEO
-cap = cv2.VideoCapture(0)
-width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH ))
-height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT ))
-# Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-out = cv2.VideoWriter('output.mkv', cv2.CAP_FFMPEG, fourcc, 20.0, (width,  height))
+# cap = cv2.VideoCapture(0)
+# width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH ))
+# height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT ))
+# # Define the codec and create VideoWriter object
+# fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
+# out = cv2.VideoWriter('output.mkv', cv2.CAP_FFMPEG, fourcc, 20.0, (width,  height))
 
-while cap.isOpened():
-    ret, frame = cap.read()
-    if not ret:
-        print("Can't receive frame (stream end?). Exiting ...")
-        break
-    frame = cv2.flip(frame, 0)
-    # write the flipped frame
-    out.write(frame)
-    cv2.imshow('frame', frame)
-    if cv2.waitKey(1) == ord('q'):
-        break
-# Release everything if job is finished
-cap.release()
-out.release()
-cv2.destroyAllWindows()
+# while cap.isOpened():
+#     ret, frame = cap.read()
+#     if not ret:
+#         print("Can't receive frame (stream end?). Exiting ...")
+#         break
+#     frame = cv2.flip(frame, 0)
+#     # write the flipped frame
+#     out.write(frame)
+#     cv2.imshow('frame', frame)
+#     if cv2.waitKey(1) == ord('q'):
+#         break
+# # Release everything if job is finished
+# cap.release()
+# out.release()
+# cv2.destroyAllWindows()

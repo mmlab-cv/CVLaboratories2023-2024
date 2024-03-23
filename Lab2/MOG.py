@@ -7,7 +7,7 @@ HISTORY = 200       # t
 N_MIXTURES = 5    # K (number of gaussians)
 BACKGROUND_RATIO = 0.1 # Gaussian threshold
 NOISE_SIGMA = 1     
-MOG_VERSION = 2
+MOG_VERSION = 1
 
 cap = cv2.VideoCapture("../material/Video.mp4")
 
