@@ -27,7 +27,7 @@ opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 
 plt.subplot(121),plt.imshow(img,cmap = 'gray'),plt.title('Original')
 plt.xticks([]), plt.yticks([])
-plt.subplot(122),plt.imshow(opening,cmap = 'gray'),plt.title('Dilation')
+plt.subplot(122),plt.imshow(opening,cmap = 'gray'),plt.title('Opening')
 plt.xticks([]), plt.yticks([])
 plt.show()
 
@@ -36,6 +36,6 @@ closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 
 plt.subplot(121),plt.imshow(img,cmap = 'gray'),plt.title('Original')
 plt.xticks([]), plt.yticks([])
-plt.subplot(122),plt.imshow(closing,cmap = 'gray'),plt.title('Dilation')
+plt.subplot(122),plt.imshow(closing,cmap = 'gray'),plt.title('Closure')
 plt.xticks([]), plt.yticks([])
 plt.show()
